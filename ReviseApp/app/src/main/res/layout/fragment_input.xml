@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <ScrollView
+        android:id="@+id/input_scollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_layout"
+        android:scrollbars="none">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/logo_image"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_alignParentTop="true"
+               android:layout_centerInParent="true"
+               android:background="@mipmap/ic_logo"
+               android:layout_marginTop="40dp"/>
+           <TextView
+               android:layout_below="@+id/logo_image"
+               android:id="@+id/title_input"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Input Information"
+               android:textAlignment="center"
+               android:textSize="40sp" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/title_input_name"
+               android:text="Full Name"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/title_input"
+               android:textSize="20sp"/>
+           <EditText
+               android:id="@+id/input_name_box"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="Input Your Full Name"
+               android:textSize="30sp"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@id/title_input_name"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/title_input_id"
+               android:text="ID"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/input_name_box"
+               android:textSize="20sp"/>
+           <EditText
+               android:id="@+id/input_id_box"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="Input Your ID"
+               android:textSize="30sp"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@id/title_input_id"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/title_input_class"
+               android:text="Class"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/input_id_box"
+               android:textSize="20sp"/>
+           <EditText
+               android:id="@+id/input_class_box"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="Input Your Class"
+               android:textSize="30sp"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@id/title_input_class"/>
+
+           <TextView
+               android:id="@+id/title_input_faculty"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/input_class_box"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:text="Faculty"
+               android:textSize="20sp" />
+           <EditText
+               android:id="@+id/input_faculty_box"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="Input Your Faculty"
+               android:textSize="30sp"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@id/title_input_faculty"/>
+           <Button
+               android:id="@+id/confirm_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/confirm_button"
+               android:text="@string/button_name"
+               android:layout_below="@+id/input_faculty_box"
+               android:textAllCaps="false"
+               android:layout_marginBottom="10dp"/>
+       </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

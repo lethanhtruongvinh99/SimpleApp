@@ -1,0 +1,4 @@
+remove background of scrollview, replace by border. 
+add border for edit text.
+move logo to scrollview
+ 

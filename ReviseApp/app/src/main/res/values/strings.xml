@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReviseApp</string>
+    <string name="nav_input">Input</string>
+    <string name="nav_list">List</string>
+    <string name="button_name">Confirm</string>
+    <string name="title_list">List Of Data</string>
+</resources>
